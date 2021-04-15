@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #161a21;
+  --footer: #282828;
+  --left: black;
+  --header: #0d1015;
+  --green: #c0fc5b;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+/* BASE STYLING */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.button {
+  padding: 5px;
+  border-radius: 25px;
+}
+
+/* CONTAINER */
+
+.container {
+  display: grid;
+
+  grid-template:
+    "Left Header Header" 80px
+    "Left Main Main" 1fr
+    "Footer Footer Footer" 100px /
+    1fr 1fr 1fr;
+}
+
+/* HEADER */
+.Header {
+  grid-area: Header;
+  background-color: var(--header);
+  border: 2px solid #ff00f0;
+  display: grid;
+
+  align-items: center;
+  justify-items: right;
+}
+
+.Header__button {
+  margin-right: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  width: 130px;
+  font-size: 1em;
+  background: var(--left);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.Left {
+  grid-area: Left;
+  background-color: var(--left);
+  border: 2px solid #a54388;
+}
+.Main {
+  grid-area: Main;
+  background-color: var(--main);
+  border: 2px solid #00ffff;
+}
+.Footer {
+  grid-area: Footer;
+  background-color: var(--footer);
+  border: 2px solid #6e975a;
+}

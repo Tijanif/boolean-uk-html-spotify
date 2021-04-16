@@ -35,6 +35,28 @@ li {
   list-style: none;
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
+a:link {
+  color: grey;
+}
+
+/* visited link */
+a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
 .button {
   padding: 5px;
   border-radius: 25px;
@@ -59,6 +81,24 @@ li {
   grid-area: Left;
   background-color: var(--left);
   border: 2px solid #a54388;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.Left__logo {
+  margin-bottom: 20px;
+}
+
+/* Left first three icons */
+.Left__icons_ul {
+  display: grid;
+  grid-gap: 5px;
+}
+.Left__icons__a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  grid-gap: 5px;
 }
 /* Main */
 .Main {

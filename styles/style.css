@@ -140,6 +140,45 @@ a:active {
 .Left__playlist__ul li {
   margin: 15px 0;
 }
+
+/* Left Profil */
+.Left__profil__app {
+  margin: 5px 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 5px;
+  cursor: pointer;
+}
+
+.Left__profil__app:hover {
+  color: var(--grey);
+}
+
+/* Left profil avatar */
+.Left__profil__avatar {
+  margin: 15px 0 0 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: left;
+  font-weight: bold;
+}
+.Left__profil__avatar:hover {
+  color: var(--grey);
+}
+.Left__profil__avatar svg {
+  background-color: grey;
+
+  border-radius: 50%;
+}
+.Left__profil__avatar svg:hover {
+  background-color: black;
+  fill: var(--grey);
+
+  border-radius: 50%;
+}
+
 /* Main */
 .Main {
   grid-area: Main;

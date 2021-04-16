@@ -110,10 +110,9 @@ a:active {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  color: white;
 }
-.Left__playlist__p:hover {
-  color: var(--grey);
-}
+
 .Left__playlist__create {
   margin: 5px 0;
   display: grid;
@@ -121,18 +120,22 @@ a:active {
   align-items: center;
   cursor: pointer;
 }
-.Left__playlist__create:hover {
+/* .Left__playlist__create:hover {
+  color: var(--grey);
+} */
+
+.Left__playlist__create__span {
   color: var(--grey);
 }
-/* why not working */
-.Left_playlist__create__span {
-  color: var(--grey);
+.Left__playlist__create__span:hover {
+  color: white;
 }
 .Left__playlist__create svg {
   background-color: var(--grey);
 }
 .Left__playlist__create svg:hover {
-  background-color: white;
+  background-color: black;
+  fill: var(--grey);
 }
 .Left__playlist__ul {
   margin: 10px 0;
@@ -214,6 +217,9 @@ a:active {
   border: 1px solid #fff;
   text-align: center;
 }
+
+/* Main Nav */
+
 /* Footer */
 .Footer {
   grid-area: Footer;

@@ -10,6 +10,7 @@
   --left: black;
   --header: #00000050;
   --green: #c0fc5b;
+  --grey: #8d8d8d;
 }
 
 body {
@@ -40,12 +41,12 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: grey;
+  color: var(--grey);
 }
 
 /* visited link */
 a:visited {
-  color: grey;
+  color: var(--grey);
 }
 
 /* mouse over link */
@@ -103,21 +104,41 @@ a:active {
 }
 
 /* Left playlist icons */
-.Left_playlist__p {
-  margin: 5px 0;
+.Left__playlist__p {
+  margin: 10px 0;
   text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Left__playlist__p:hover {
+  color: var(--grey);
 }
 .Left__playlist__create {
   margin: 5px 0;
   display: grid;
   grid-auto-flow: column;
   align-items: center;
+  cursor: pointer;
 }
+.Left__playlist__create:hover {
+  color: var(--grey);
+}
+/* why not working */
 .Left_playlist__create__span {
-  color: grey;
+  color: var(--grey);
 }
 .Left__playlist__create svg {
-  background-color: grey;
+  background-color: var(--grey);
+}
+.Left__playlist__create svg:hover {
+  background-color: white;
+}
+.Left__playlist__ul {
+  margin: 10px 0;
+}
+.Left__playlist__ul li {
+  margin: 15px 0;
 }
 /* Main */
 .Main {

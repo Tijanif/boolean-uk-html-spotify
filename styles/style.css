@@ -83,6 +83,7 @@ a:active {
   border: 2px solid #a54388;
   display: grid;
   grid-gap: 20px;
+  grid-template-rows: auto auto 1fr auto;
 }
 
 .Left__logo {
@@ -99,6 +100,24 @@ a:active {
   grid-template-columns: auto 1fr;
   align-items: center;
   grid-gap: 5px;
+}
+
+/* Left playlist icons */
+.Left_playlist__p {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+.Left__playlist__create {
+  margin: 5px 0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.Left_playlist__create__span {
+  color: grey;
+}
+.Left__playlist__create svg {
+  background-color: grey;
 }
 /* Main */
 .Main {

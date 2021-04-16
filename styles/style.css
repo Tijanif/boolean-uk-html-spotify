@@ -8,7 +8,7 @@
   --main: #161a21;
   --footer: #282828;
   --left: black;
-  --header: #0d1015;
+  --header: #00000050;
   --green: #c0fc5b;
 }
 
@@ -43,50 +43,63 @@ li {
 /* CONTAINER */
 
 .container {
+  height: 100vh;
+  width: 100vw;
   display: grid;
 
   grid-template:
-    "Left Header Header" 80px
-    "Left Main Main" 1fr
-    "Footer Footer Footer" 100px /
-    1fr 1fr 1fr;
+    /* 'Left Header Header' 80px */
+    'Left Main' 1fr
+    'Footer Footer' auto /
+    auto 1fr;
 }
 
-/* HEADER */
-.Header {
-  grid-area: Header;
+.Left {
+  padding: 20px;
+  grid-area: Left;
+  background-color: var(--left);
+  border: 2px solid #a54388;
+}
+/* Main */
+.Main {
+  grid-area: Main;
+  background-color: var(--main);
+  border: 2px solid #00ffff;
+  overflow: scroll;
+}
+
+/* Main Header */
+.Main__Header {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+
   background-color: var(--header);
-  border: 2px solid #ff00f0;
+
   display: grid;
 
   align-items: center;
   justify-items: right;
 }
 
-.Header__button {
-  margin-right: 5px;
-  padding: 5px;
-  border: none;
+.Main__Header__button {
+  margin-right: 10px;
+  padding: 12px;
+
   border-radius: 20px;
   width: 130px;
-  font-size: 1em;
+  text-transform: uppercase;
+  font-size: 1.2em;
   background: var(--left);
   color: #fff;
   border: 1px solid #fff;
+  text-align: center;
 }
-
-.Left {
-  grid-area: Left;
-  background-color: var(--left);
-  border: 2px solid #a54388;
-}
-.Main {
-  grid-area: Main;
-  background-color: var(--main);
-  border: 2px solid #00ffff;
-}
+/* Footer */
 .Footer {
   grid-area: Footer;
+
+  padding: 20px;
   background-color: var(--footer);
   border: 2px solid #6e975a;
 }

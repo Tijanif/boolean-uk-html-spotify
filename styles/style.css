@@ -120,9 +120,6 @@ a:active {
   align-items: center;
   cursor: pointer;
 }
-/* .Left__playlist__create:hover {
-  color: var(--grey);
-} */
 
 .Left__playlist__create__span {
   color: var(--grey);
@@ -219,6 +216,24 @@ a:active {
 }
 
 /* Main Nav */
+.Main__Nav {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.Main__Nav__content__ul {
+  display: grid;
+
+  grid-auto-flow: column;
+  grid-gap: 5px;
+
+  text-transform: uppercase;
+}
+
+.Main__Nav__content__ul li a:hover {
+  text-decoration: underline solid var(--green) 3px;
+}
 
 /* Footer */
 .Footer {

@@ -183,7 +183,7 @@ a:active {
 .Main {
   grid-area: Main;
   background-color: var(--main);
-  border: 2px solid #00ffff;
+
   overflow: scroll;
 }
 
